@@ -14,14 +14,22 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- flowbite -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
 
     <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- slick
     <link rel="stylesheet" href="../slick/slick.css" />
-    <link rel="stylesheet" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" href="../slick/slick-theme.css" /> -->
 
     <!-- css -->
     <link rel="stylesheet" href="./output.css" />
@@ -484,11 +492,150 @@
           </div>
         </div>
       </section>
+
+      <!-- Prevent -->
+      <section>
+        <div class="container">
+          <div
+            class="tab flex flex-wrap items-center"
+            data-tab-group="integration-tab"
+          >
+            <div class="w-full lg:w-7/12 order-last lg:order-2">
+              <div class="tab-content" data-tab-content="">
+                <div class="tab-content-panel active" data-tab-panel="0">
+                  <img
+                    class="w-full object-contain"
+                    src="./../images/sells-by-country.png"
+                  />
+                </div>
+                <div class="tab-content-panel" data-tab-panel="1">
+                  <img
+                    class="w-full object-contain"
+                    src="./../images/collaboration.png"
+                  />
+                </div>
+                <div class="tab-content-panel" data-tab-panel="2">
+                  <img
+                    class="w-full object-contain"
+                    src="./../images/sells-by-country.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 w-full lg:w-5/12 order-first lg:order-1 lg:mt-0">
+              <div class="text-container">
+                <h2 class="lg:text-4xl">
+                  Prevent failure from impacting your reputation
+                </h2>
+                <p class="mt-4">
+                  Our platform helps you build secure onboarding authentication
+                  experiences that retain and engage your users. We build the
+                  infrastructure, you can.
+                </p>
+                <ul
+                  class="tab-nav ml-0 lg:-ml-4 mt-8 border-b-0"
+                  data-tab-nav=""
+                >
+                  <li
+                    class="tab-nav-item active flex items-center"
+                    data-tab="0"
+                  >
+                    <img class="mr-3" src="./../images/drop.svg" alt="" />
+                    Habit building essential choose habit
+                  </li>
+                  <li class="tab-nav-item flex items-center" data-tab="1">
+                    <img class="mr-3" src="./../images/brain.svg" alt="" />
+                    Get an overview of Habit Calendars.
+                  </li>
+                  <li class="tab-nav-item flex items-center" data-tab="2">
+                    <img class="mr-3" src="./../images/timer.svg" alt="" />
+                    Start building with Habitify platform
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accept payments -->
+      <section>
+        <div class="container">
+          <div class="flex flex-wrap items-center mt-12 lg:mt-0">
+            <div class="w-full lg:w-7/12">
+              <div class="relative">
+                <img
+                  class="w-full object-contain"
+                  src="./../images/collaboration.png"
+                />
+                <img
+                  class="absolute bottom-6 left-1/2 -z-[1] transform -translate-x-1/2"
+                  src="./../images/shape.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mt-6 w-full lg:w-5/12 lg:mt-0">
+              <div class="text-container">
+                <h2 class="lg:text-4xl">
+                  Accept payments any country in this whole universe
+                </h2>
+                <p class="mt-4">
+                  Donec sollicitudin molestie malesuada. Donec sollicitudin
+                  molestie malesuada. Mauris pellentesque nec, egestas non nisi.
+                  Cras ultricies ligula sed
+                </p>
+                <ul class="mt-6 text-dark lg:-ml-4">
+                  <li class="mb-2 flex items-center rounded px-4">
+                    <img
+                      class="mr-3"
+                      src="./../images/checkmark-circle.svg"
+                      alt=""
+                    />
+                    Supporting more than 119 countries worldwide
+                  </li>
+                  <li class="mb-2 flex items-center rounded px-4">
+                    <img
+                      class="mr-3"
+                      src="./../images/checkmark-circle.svg"
+                      alt=""
+                    />
+                    Open transactions with more than 100 currencies
+                  </li>
+                  <li class="flex items-center rounded px-4">
+                    <img
+                      class="mr-3"
+                      src="./../images/checkmark-circle.svg"
+                      alt=""
+                    />
+                    Customer Service in 79 languages
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(".tab-nav").slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
+      });
+    </script>
   </body>
 </html>
