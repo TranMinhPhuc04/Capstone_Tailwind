@@ -39,6 +39,24 @@
     left: 0;
 }
 
+.tab-content-panel {
+    display: none;
+}
+  
+.tab-content-panel.active {
+    display: block;
+}
+
+.tab-nav-item {
+    cursor: pointer; /* Đổi con trỏ chuột thành hình bàn tay */
+}
+  
+.tab-nav-item.active {
+    background-color: #fcbca0; /* Đổi màu nền thành hồng khi active */
+}
+  
+  
+
 @keyframes nav2Hover {
     from {
         opacity: 0;
