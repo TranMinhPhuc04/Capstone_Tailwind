@@ -48,11 +48,15 @@
 }
 
 .tab-nav-item {
-    cursor: pointer; /* Đổi con trỏ chuột thành hình bàn tay */
+    cursor: pointer;
+    padding: 10px;
 }
   
 .tab-nav-item.active {
-    background-color: #fcbca0; /* Đổi màu nền thành hồng khi active */
+    background-color: #fcbca0;
+    width: 310px;
+    height: 50px;
+    border-radius: 5px;
 }
   
   
