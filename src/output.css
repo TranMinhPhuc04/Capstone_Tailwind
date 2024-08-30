@@ -1886,12 +1886,14 @@ input:checked + .toggle-bg {
 
 .tab-nav-item {
   cursor: pointer;
-  /* Đổi con trỏ chuột thành hình bàn tay */
+  padding: 10px;
 }
 
 .tab-nav-item.active {
   background-color: #fcbca0;
-  /* Đổi màu nền thành hồng khi active */
+  width: 310px;
+  height: 50px;
+  border-radius: 5px;
 }
 
 @keyframes nav2Hover {
