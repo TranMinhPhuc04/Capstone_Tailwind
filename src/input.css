@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1202px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.nav_2:hover > #mega-menu-dropdown {
+    background: #fafafa;
+    display: grid;
+    /* animation: nav2Hover 0.25 linear 0 0 backwards; */
+}
+
+.signUpBtn {
+    box-shadow: 20px 20px 10px 0 rgba(0, 0, 0, 0.052);
+}
+
+.signUpBtn:hover {
+    box-shadow: unset;
+}
+
+.nav_1 {
+    position: relative;
+}
+
+.nav_1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(254 96 25);
+    position: absolute;
+    top: 130%;
+    left: 0;
+}
+
+.tab-content-panel {
+    display: none;
+}
+  
+.tab-content-panel.active {
+    display: block;
+}
+
+.tab-nav-item {
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.tab-nav-item.active {
+    background-color: #fcbca0;
+    width: 310px;
+    height: 50px;
+    border-radius: 5px;
+}
+  
+  
+
+@keyframes nav2Hover {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+

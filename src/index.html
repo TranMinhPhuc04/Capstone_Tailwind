@@ -4,6 +4,650 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- slick
+    <link rel="stylesheet" href="../slick/slick.css" />
+    <link rel="stylesheet" href="../slick/slick-theme.css" /> -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./input.css" />
   </head>
-  <body></body>
+  <body class="bg-body">
+    <!-- Header -->
+    <header class="header">
+      <nav class="border-gray-200 dark:bg-gray-900">
+        <div
+          class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4"
+        >
+          <a
+            href="index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="./assets/images/logo.svg" class="h-8" alt="logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            ></span>
+          </a>
+          <div
+            class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse"
+          >
+            <a
+              href="#"
+              class="signUpBtn text-black bg-white font-medium rounded-full text-sm md:px-5 md:py-2.5 hidden lg:block md:hidden"
+              >Sign Up Now</a
+            >
+            <button
+              data-collapse-toggle="mega-menu"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden"
+              aria-controls="mega-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            id="mega-menu"
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          >
+            <ul
+              class="flex flex-col mt-4 font-normal md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="nav_1 block py-2 px-3 text-menu border-b border-gray-100 md:border-0 md:p-0 dark:text-blue-500 dark:border-gray-700"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-menu md:p-0 dark:text-white md:dark:hover:text-menu dark:hover:bg-gray-700 dark:hover:text-menu md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-menu md:p-0 dark:text-white md:dark:hover:text-menu dark:hover:bg-gray-700 dark:hover:text-menu md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-menu md:p-0 dark:text-white md:dark:hover:text-menu dark:hover:bg-gray-700 dark:hover:text-menu md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-menu md:p-0 dark:text-white md:dark:hover:text-menu dark:hover:bg-gray-700 dark:hover:text-menu md:dark:hover:bg-transparent dark:border-gray-700"
+                  >How It Works</a
+                >
+              </li>
+              <li class="nav_2 relative">
+                Pages <i class="fa-solid fa-chevron-down"></i>
+                <!-- <img src="../images/Screenshot 2024-08-20 220223.png" alt="" /> -->
+                <!-- <button
+                  id="mega-menu-dropdown-button"
+                  data-dropdown-toggle="mega-menu-dropdown"
+                  class="flex items-center justify-between w-full py-2 px-3 font-normal text-gray-900 border-b border-gray-100 md:w-auto md:hover:bg-transparent md:border-0 md:hover:text-menu md:p-0 dark:text-white md:dark:hover:text-menu dark:hover:bg-gray-700 dark:hover:text-menu md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Pages
+                  <svg
+                    class="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button> -->
+                <div
+                  id="mega-menu-dropdown"
+                  class="absolute z-10 w-[150px] hidden grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+                >
+                  <div
+                    class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white w-[150px]"
+                  >
+                    <ul
+                      class="space-y-4"
+                      aria-labelledby="mega-menu-dropdown-button"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 dark:text-gray-400 hover:text-menu dark:hover:text-menu"
+                        >
+                          Career
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 dark:text-gray-400 hover:text-menu dark:hover:text-menu"
+                        >
+                          Career Single
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 dark:text-gray-400 hover:text-menu dark:hover:text-menu"
+                        >
+                          Integrations
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 dark:text-gray-400 hover:text-menu dark:hover:text-menu"
+                        >
+                          Integration Single
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 dark:text-gray-400 hover:text-menu dark:hover:text-menu"
+                        >
+                          Pricing
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 dark:text-gray-400 hover:text-menu dark:hover:text-menu"
+                        >
+                          Changelogs
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 dark:text-gray-400 hover:text-menu dark:hover:text-menu"
+                        >
+                          Term & Conditions
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-menu md:p-0 dark:text-white md:dark:hover:text-menu dark:hover:bg-gray-700 dark:hover:text-menu md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Banner -->
+      <section class="relative py-16">
+        <div class="container mx-auto">
+          <div
+            class="w-full flex flex-col justify-between lg:flex-row items-center"
+          >
+            <div class="w-1/2 max-w-full lg:w-1/2">
+              <h1
+                class="font-bold text-gray-800 sm:text-[40px] max-sm:text-[20px] max-md:text-[20px]"
+              >
+                Scale design & dev <br />
+                operations with <br />
+                Avocode Enterprise
+              </h1>
+              <p class="mt-6 text-gray-500">
+                A fully integrated suite of authentication & authorization
+                products, Stytch’s platform removes the headache of.
+              </p>
+              <a
+                class="signUpBtn inline-block bg-white text-gray-900 font-semibold py-2 px-4 rounded-full shadow hover:bg-gray-100 mt-8"
+                href="#"
+              >
+                Download The Theme
+              </a>
+            </div>
+            <div class="w-1/2 lg:w-1/2 mt-8 lg:mt-0">
+              <img
+                src="./assets/images/banner-img.png"
+                alt="Banner Image"
+                class="w-full object-contain"
+                width="603"
+                height="396"
+              />
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/images/banner-shape.svg"
+          alt="Banner Shape"
+          class="absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
+        />
+      </section>
+
+      <!-- Solution -->
+      <section class="relative bg-gray-50 py-12">
+        <img
+          class="absolute left-0 top-0 -translate-y-1/2"
+          src="./assets/images/feature-shape.svg"
+          alt=""
+        />
+        <div class="container mx-auto px-4">
+          <div
+            class="flex flex-col lg:flex-row lg:space-x-20 text-center lg:text-start"
+          >
+            <div class="lg:w-1/2">
+              <h2 class="text-[50px] font-bold">
+                The Highlighting Part <br />
+                Of Our Solution
+              </h2>
+            </div>
+            <div class="mt-6 lg:w-1/2 lg:mt-0">
+              <p class="text-gray-400 text-[20px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas Werat viverra id et aliquet. vulputate egestas
+                sollicitudin .
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4"
+          >
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">Live Caption</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-1.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">Smart Reply</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-2.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">
+                  Sound Amplifier
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-3.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">
+                  Gesture Navigation
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-4.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">Dark Theme</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-5.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">
+                  Privacy Controls
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-6.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">
+                  Location Controls
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-7.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">
+                  Security Updates
+                </h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-8.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">Focus Mode</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-9.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div
+              class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            >
+              <div>
+                <h3 class="text-xl font-semibold lg:text-2xl">Family Link</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <span class="mt-4">
+                <img
+                  class="object-contain"
+                  src="./assets/images/feature-icon-10.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Prevent -->
+      <section>
+        <div class="container">
+          <div
+            class="tab flex flex-wrap items-center"
+            data-tab-group="integration-tab"
+          >
+            <div class="w-full lg:w-7/12 order-last lg:order-2">
+              <div class="tab-content" data-tab-content="">
+                <div class="tab-content-panel active" data-tab-panel="0">
+                  <img
+                    class="w-full object-contain"
+                    src="./assets/images/sells-by-country.png"
+                  />
+                </div>
+                <div class="tab-content-panel" data-tab-panel="1">
+                  <img
+                    class="w-full object-contain"
+                    src="./assets/images/collaboration.png"
+                  />
+                </div>
+                <div class="tab-content-panel" data-tab-panel="2">
+                  <img
+                    class="w-full object-contain"
+                    src="./assets/images/sells-by-country.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 w-full lg:w-5/12 order-first lg:order-1 lg:mt-0">
+              <div class="text-container">
+                <h2 class="lg:text-4xl">
+                  Prevent failure from impacting your reputation
+                </h2>
+                <p class="mt-4">
+                  Our platform helps you build secure onboarding authentication
+                  experiences that retain and engage your users. We build the
+                  infrastructure, you can.
+                </p>
+                <ul
+                  class="tab-nav ml-0 lg:-ml-4 mt-8 border-b-0"
+                  data-tab-nav=""
+                >
+                  <li
+                    class="tab-nav-item active flex items-center"
+                    data-tab="0"
+                  >
+                    <img class="mr-3" src="./assets/images/drop.svg" alt="" />
+                    Habit building essential choose habit
+                  </li>
+                  <li class="tab-nav-item flex items-center" data-tab="1">
+                    <img class="mr-3" src="./assets/images/brain.svg" alt="" />
+                    Get an overview of Habit Calendars.
+                  </li>
+                  <li class="tab-nav-item flex items-center" data-tab="2">
+                    <img class="mr-3" src="./assets/images/timer.svg" alt="" />
+                    Start building with Habitify platform
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accept payments -->
+      <section>
+        <div class="container">
+          <div class="flex flex-wrap items-center mt-12 lg:mt-0">
+            <div class="w-full lg:w-7/12">
+              <div class="relative">
+                <img
+                  class="w-full object-contain"
+                  src="./assets/images/collaboration.png"
+                />
+                <img
+                  class="absolute bottom-6 left-1/2 -z-[1] transform -translate-x-1/2"
+                  src="./assets/images/shape.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mt-6 w-full lg:w-5/12 lg:mt-0">
+              <div class="text-container">
+                <h2 class="lg:text-4xl">
+                  Accept payments any country in this whole universe
+                </h2>
+                <p class="mt-4">
+                  Donec sollicitudin molestie malesuada. Donec sollicitudin
+                  molestie malesuada. Mauris pellentesque nec, egestas non nisi.
+                  Cras ultricies ligula sed
+                </p>
+                <ul class="mt-6 text-dark lg:-ml-4">
+                  <li class="mb-2 flex items-center rounded px-4">
+                    <img
+                      class="mr-3"
+                      src="./assets/images/checkmark-circle.svg"
+                      alt=""
+                    />
+                    Supporting more than 119 countries worldwide
+                  </li>
+                  <li class="mb-2 flex items-center rounded px-4">
+                    <img
+                      class="mr-3"
+                      src="./assets/images/checkmark-circle.svg"
+                      alt=""
+                    />
+                    Open transactions with more than 100 currencies
+                  </li>
+                  <li class="flex items-center rounded px-4">
+                    <img
+                      class="mr-3"
+                      src="./assets/images/checkmark-circle.svg"
+                      alt=""
+                    />
+                    Customer Service in 79 languages
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabNavItems = document.querySelectorAll(".tab-nav-item");
+        const tabContentPanels =
+          document.querySelectorAll(".tab-content-panel");
+
+        tabNavItems.forEach((tabNavItem, index) => {
+          tabNavItem.addEventListener("click", function () {
+            // Loại bỏ class "active" khỏi tất cả các mục tab và nội dung
+            tabNavItems.forEach((item) => item.classList.remove("active"));
+            tabContentPanels.forEach((panel) =>
+              panel.classList.remove("active")
+            );
+
+            // Thêm class "active" vào mục tab và nội dung được chọn
+            tabNavItem.classList.add("active");
+            tabContentPanels[index].classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

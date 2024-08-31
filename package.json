@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "scripts": {
+    "start": "live-server ./src --watch=output.css"
+  },
+  "dependencies": {
+    "flowbite": "^2.5.1"
   }
 }
