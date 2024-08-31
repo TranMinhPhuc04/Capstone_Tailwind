@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         'menu': 'rgb(254 96 25)',
-        'body': '#fafafa'
+        'body': '#fafafa',
+        
       }
     },
   },
