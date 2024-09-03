@@ -141,46 +141,6 @@ img {
     padding: 0.125rem;
 }
 
-.carousel {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .carousel .flex {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .pagination-dot {
-    width: 12px;
-    height: 12px;
-    background-color: gray;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .pagination-dot.active {
-    background-color: black;
-  }
-  
-  .carousel .card:nth-child(n+4) {
-    display: none;
-  }
-  
-  .carousel .card {
-    flex: 0 0 auto; /* Prevent shrinking or growing */
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .carousel .card.show {
-    display: block;
-  }
-  
-  
-  
-  
-
 @keyframes shadow-pulse {
     0%, 100% {
       box-shadow: 0 0 0 0 rgba(254, 96, 25, 0.5);
@@ -206,4 +166,3 @@ img {
         opacity: 1;
     }
 }
-
