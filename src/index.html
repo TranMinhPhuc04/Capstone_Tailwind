@@ -21,8 +21,8 @@
     />
 
      <!-- slick -->
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+     <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
      
 
     <!-- css -->
@@ -759,11 +759,11 @@
       <!-- Card -->
       <section>
         <div class="container mx-auto px-4">
-          <div class="flex justify-center items-center space-x-8 py-10">
+          <div class="carousel__list flex justify-center items-center space-x-8 py-10">
             <!-- Card 1 -->
             <div class="w-80 bg-white p-6 pt-10 rounded-lg shadow-md flex flex-col items-center card relative">
-              <div class="review-author-avatar absolute -top-10">
-                <img src="./assets/images/user-5.png" alt="Courtney Henry" class="h-20 w-20 rounded-full border-4 border-white" />
+              <div class="review-author-avatar absolute bg-gradient">
+                <img src="./assets/images/user-5.png" alt="Courtney Henry" class="h-22 w-22 rounded-full border-4 border-white" />
               </div>
               <h3 class="text-xl font-semibold mt-12">Courtney Henry</h3>
               <p class="text-gray-600 mb-4">microsoft corp</p>
@@ -780,8 +780,8 @@
             </div>
             <!-- Card 2 -->
             <div class="w-80 bg-white p-6 pt-10 rounded-lg shadow-md flex flex-col items-center card relative">
-              <div class="review-author-avatar absolute -top-10">
-                <img src="./assets/images/user-2.png" alt="Ronald Richards" class="h-20 w-20 rounded-full border-4 border-white" />
+              <div class="review-author-avatar absolute bg-gradient">
+                <img src="./assets/images/user-2.png" alt="Ronald Richards" class="h-22 w-22 rounded-full border-4 border-white" />
               </div>
               <h3 class="text-xl font-semibold mt-12">Ronald Richards</h3>
               <p class="text-gray-600 mb-4">meta limited</p>
@@ -798,8 +798,8 @@
             </div>
             <!-- Card 3 -->
             <div class="w-80 bg-white p-6 pt-10 rounded-lg shadow-md flex flex-col items-center card relative">
-              <div class="review-author-avatar absolute -top-10">
-                <img src="./assets/images/user-6.png" alt="Bessie Cooper" class="h-20 w-20 rounded-full border-4 border-white" />
+              <div class="review-author-avatar absolute bg-gradient">
+                <img src="./assets/images/user-6.png" alt="Bessie Cooper" class="h-22 w-22 rounded-full border-4 border-white" />
               </div>
               <h3 class="text-xl font-semibold mt-12">Bessie Cooper</h3>
               <p class="text-gray-600 mb-4">apple inc ltd</p>
@@ -816,11 +816,7 @@
             </div>
           </div>
         </div>
-        <div class="pagination-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+       
       </section>
       
 
@@ -978,21 +974,27 @@
     </script>
 
    <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-crossorigin="anonymous"
-referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script>
-$(document).ready(function(){
-$('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-});
-});
-</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="../slick/slick.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $('.carousel__list').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+				
+  });
+  </script>
  
 
   </body>
