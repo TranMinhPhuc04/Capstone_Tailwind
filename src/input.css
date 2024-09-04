@@ -143,30 +143,51 @@ img {
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 70px;
 }
-.pagination-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.slick-dots li {
+  display: inline-block;  /* Hiển thị 3 dấu slick */
 }
 
-.dot {
-    
-
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.slick-dots li:nth-child(n+4) {
+  display: none;  /* Ẩn từ dấu thứ 4 trở đi */
+}
+.slick-dots li button:before {
+  font-size: 12px;  /* Kích thước của các dots */
+  color: #ccc;  /* Màu của các dots */
 }
 
-.dot.active {
-  background-color: #717171;
+.card {
+  margin-right: 1.25rem; /* Đây là lớp mr-5 */
+  text-align: center; /* Căn giữa nội dung văn bản */
 }
 
+.card h3,
+.card p {
+  text-align: center; /* Căn giữa các thẻ h3 và p */
+}
+
+.review-author-avatar img {
+  max-width: 100%; /* Đảm bảo ảnh không bị ảnh hưởng bởi phần tử khác */
+  display: block;
+  margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+.carousel__list {
+  justify-content: center; /* Giúp căn giữa các card trong carousel */
+}
+
+.review-author-avatar {
+  overflow: visible; /* Đảm bảo không cắt ảnh */
+}
+
+
+
+@media  (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
 
 @keyframes shadow-pulse {
   0%,
